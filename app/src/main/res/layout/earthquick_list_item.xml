@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/magnitude"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center_vertical"
+        android:textSize="16sp"
+        tools:text="1.1"
+        android:gravity="center"
+        android:background="@drawable/magnitude_circle"/>
+
+    <LinearLayout
+        android:layout_marginLeft="16dp"
+       android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+    >
+
+        <TextView
+        android:id="@+id/location_offset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        tools:text="30km of"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="1"
+            android:textColor="@color/textColorEarthquakeDetails"
+        />
+
+        <TextView
+            android:id="@+id/location_primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textColor="@color/textColorEarthquakeLocation"
+            android:textSize="16sp"
+            tools:text="Long placeholder location that should wrap to more than 2 lines of text"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_gravity="end"
+            android:textColor="@color/textColorEarthquakeDetails"
+            android:textSize="13sp"
+            tools:text="Mar 6, 2010"
+            />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:textColor="@color/textColorEarthquakeDetails"
+        android:textSize="13sp"
+        tools:text="3:00 PM" />
+
+    </LinearLayout>
+
+</LinearLayout>
